@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Cadastrar Fornecedor</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button class="Save" type="submit">Salvar</button>
+  </form>
+{% endblock %}

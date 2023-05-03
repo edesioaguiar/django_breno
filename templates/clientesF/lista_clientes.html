@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Consulta Clientes</h2><br><br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="consulta_dataCadastro">Cadastro</th>
+          <th class="consulta_hora">Hora</th>
+          <th class="consulta">Nome</th>
+          <th class="consulta_sobrenome">Sobrenome</th>
+          <th class="consulta_endereco">Endereço</th>
+          <th class="consulta_telefone">Telefone</th>
+          <th class="consulta_celular">Celular</th>
+          <th class="consulta_email">E-mail</th>
+          <th class="consulta_acoes">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cliente in clientes %}
+          <tr>
+            <td>{{ cliente.data_cadastro}}</td>
+            <td>{{ cliente.hora_cadastro}}</td>
+            <td>{{ cliente.nome }}</td>
+            <td>{{ cliente.sobrenome }}</td>
+            <td>{{ cliente.endereco }}</td>
+            <td>{{ cliente.telefone }}</td>
+            <td>{{ cliente.celular }}</td>
+            <td>{{ cliente.email }}</td>
+            <td>
+              <a href="{% url 'editar_cliente' cliente.pk %}" class="btn btn-warning">Editar</a>
+          <form class="consulta" action="{% url 'excluir_cliente' cliente.pk %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</button>
+          </form>
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="4">Não há clientes cadastrados.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+<a href="{% url 'criar_cliente' %}" class="btn btn-primary">Cadastrar Cliente</a>
+{% endblock %}

@@ -1,0 +1,433 @@
+@media screen and
+    (max-width: 1920px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-image: url(../../_images/BrennoCar/Car_Headlights_resize.png);
+        background-position: 50% 70px;
+        background-size: contain;
+        background-color: rgba(9,9,7, 1);
+        opacity:95%;
+    }
+    .bg-dark{
+        height: 80px;
+        opacity:100%;
+        /*background-color: #CD5C5C!important;*/
+    }
+    .logo-injecao-eletronica img{
+        position: absolute;
+        margin-top: -36px;
+        margin-left: 80px;
+        width: 65px;
+    }
+    .dropdown{
+        margin-bottom: 0;
+        width: 160px;
+        font-size: 14px;
+        color: red;
+    }
+    ul.dropdown-menu{
+        background-color: rgba(255,255,255,0);
+        margin-bottom: 0;
+        width: 130px;
+    }
+    .dropdown-item{
+        color: #FFFFFF;
+    }
+    a.dropdown-item:hover{
+        background-color: rgba(255,255,255,0.5);
+        font-weight: 600;
+        color: red;
+    }
+    #cab-login{
+        margin-top: -66px;
+    }
+    span{
+        width: 200px;
+        color: #FFFFFF;
+        margin-top: -66px;
+    }
+    span.bem-vindo{
+        margin-right: 80px;
+    }
+    small{
+        font-size: 14px;
+        color: #f3e97a;
+    }
+    li {
+        text-align: center;
+    }
+    li a:hover {
+        font-weight: 600;
+        color: red;
+        text-decoration: none;
+        list-style: none;
+        border-radius: 5px;
+        /*background-color: rgba(255,255,255,0.3);*/
+    }
+    #id_username, #id_password{
+        margin-bottom: 8px;
+    }
+    p{
+        justify-content: center;
+        display: inline-grid;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    label{
+        justify-self: center;
+        margin-bottom: 0;
+        margin-right: 10px;
+        font-size: 16px;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        color: yellow;
+    }
+    button.login{
+        display: inline-grid;
+        width: 180px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        background-color: red;
+        color: #FFFFFF;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+    .submit{
+        font-weight: 500;
+        letter-spacing: 2px;
+        background-color: red;
+        color: #FFFFFF;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px 5px;
+        border-radius: 5px;
+        width: 170px;
+    }
+    #cadastroDropdown,
+    #consultaDropdown{
+        text-transform: Uppercase;
+        text-align: center;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        width: 160px;
+    }
+    #cadastroDropdown:hover,
+    #consultaDropdown:hover{
+        font-weight: 600;
+        color: #CD5C5C;
+    }
+    #id_cnpj{
+        margin-right: 50px;
+        width: 160px;
+        text-align: right;
+    }
+    #id_cpf{
+        margin-right: 10px;
+        width: 130px;
+        text-align: right;
+    }
+    #id_estado{
+        padding-left: 5px;
+        margin-right: 80px;
+    }
+    #id_cidade{
+        padding-left: 5px;
+        margin-right: 80px;
+        width: 200px;
+    }
+    #id_endereco{
+        padding-left: 5px;
+        margin-right: 210px;
+        width: 300px;
+    }
+    #id_data_nascimento{
+        padding-left: 5px;
+        margin-right: 320px;
+        width: 140px;
+    }
+    #id_atividade, #id_segmento{
+        margin-right: 20px;
+        width: 180px;
+        text-align: right;
+    }
+    #id_nome,
+    #id_bairro{
+        padding-left: 5px;
+        margin-right: 150px;
+        width: 560px;
+    }
+    #id_profissao{
+        padding-left: 5px;
+        margin-right: 10px;
+        width: 230px;
+    }
+    #id_contato{
+        padding-left: 5px;
+        margin-right: 150px;
+        width: 260px;
+    }
+    #id_email, #id_site{
+        padding-left: 5px;
+        margin-right: 20px;
+        width: 270px;
+    }
+    #id_nome_fantasia, 
+    #id_razao_social,
+    #id_sobrenome{
+        padding-left: 5px;
+        margin-right: 120px;
+        width: 560px;
+    }
+    #id_telefone{
+        padding-left: 5px;
+        margin-right: 28px;
+        width: 130px;
+    }
+    #id_celular{
+        padding-left: 5px;
+        margin-right: 28px;
+        width: 130px;
+    }
+    #id_cep{
+        margin-right: 10px;
+        width: 90px;
+    }
+    #id_uf {
+        padding-left: 5px;
+        margin-right: 20px;
+        width: 40px;
+    }
+    #id_ano, #id_placa{
+        padding-left: 5px;
+        width: 90px;
+    }
+    #id_marca{
+        padding-left: 5px;
+        width: 200px;
+    }
+    #id_modelo{
+        padding-left: 5px;
+        width: 300px;
+    }
+    #id_cliente{
+        height: 36px;
+        border-radius: 5px;
+        padding-left: 5px;
+        width: 300px;
+    }
+    #id_mensagem {
+        padding-left: 5px;
+        margin-right: 10px;
+        width: 350px;
+        height: 80px;
+    }
+    b{
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    .navbar-brand{
+        color: #FF6347;
+        margin-top: -30px;
+        position: absolute;
+        margin-left: 160px;
+        font-family: Bruno Ace, Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        text-align: center;
+        width:142px;
+    }
+    .navbar-nav{
+        margin-left: 300px;
+    }
+    .navbar-expand-lg{
+        border-radius: 0 0 20px 20px;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        margin-top: -20px;
+        margin-left: 10%;
+        width: 40%;
+        justify-content: center;
+        font-size: 13px;
+    }
+    h2{
+        margin-top: 50px;
+        font-size: 22px;
+        margin-left: 320px;
+        position: absolute;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+    }
+    p.menslogin{
+        width: 100%;
+        text-align: center;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: yellow;
+        font-size: 16px;
+        margin-top: 220px;
+    }
+    ul li{
+        font-size: 13px;
+        list-style: none;
+        font-family: Montserrat, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 98, 0);
+    }
+    .navbar-expand-lg>.container-fluid{
+        margin-top: 56px;
+    }
+    #logout{
+        font-size: 14px;
+        font-weight: 300;
+        
+    }
+    a.logout{
+        text-decoration: none;
+        color: red;
+    }
+    .logout:hover{
+        color: #98FB98;
+    }
+    .table{
+        margin-top: 60px;
+    }
+    .table thead th{
+        padding: 5px 5px;
+        border-bottom: 0;
+        border-top: 0;
+    }
+    th.consulta_dataCadastro{
+        width: 140px;
+    }
+    th.consulta_hora{
+        width: 60px;
+    }
+    th.consulta_endereco{
+        width: 200px;
+    }
+    th.consulta_sobrenome{
+        width: 180px;
+    }
+    th.consulta_celular,
+    th.consulta_telefone{
+        width: 110px;
+    }
+    th.consulta, 
+    th.consulta_endereco,
+    th.consulta_sobrenome, 
+    th.consulta_acoes,
+    th.consulta_celular,
+    th.consulta_telefone,
+    th.consulta_dataCadastro,
+    th.consulta_montadora,
+    th.consulta_modelo, 
+    th.consulta_ano, 
+    th.consulta_placa,
+    th.consulta_email,
+    th.consulta_hora,
+    th.consulta_cnpj,
+    th.consulta_razaosocial{
+        font-weight: 400;
+        font-size: 13px;
+        color: yellow;
+    }
+    th.consulta_cnpj{
+        width: 140px;
+    }
+    th.consulta_razaosocial{
+        width: 180px;
+    }
+    th.consulta_montadora{
+        width: 180px;
+    }
+    th.consulta_modelo{
+        width: 180px;
+    }
+    th.consulta_ano{
+        width: 100px;
+    }
+    th.consulta_placa{
+        width: 160px;
+    }
+    th.consulta_email{
+        width: 280px;
+    }
+    .table td{
+        padding: 0.3rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+    tbody{
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    .btn.btn-primary{
+        font-size: 14px;
+        padding: 5px 6px;
+        position: absolute;
+        margin-left: 64px;
+    }
+    .btn-primary:hover{
+        font-weight: 600;
+        background-color: green;
+        color: #FFFFFF;
+    }
+    .btn.btn-warning{
+        margin-left: -64px;
+        font-size: 14px;
+        padding: 5px 10px;
+        position: absolute;
+    }
+    .btn.btn-danger{
+        font-size: 14px;
+        margin-top: -86px;
+        padding: 5px 8px;
+    }
+    .Save{
+        font-weight: 500;
+        letter-spacing: 2px;
+        background-color: green;
+        color: #FFFFFF;
+        font-family: Montserrat, Robot, Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px 5px;
+        border-radius: 5px;
+        width: 170px;
+        margin-top: 10px;
+    }
+    .Save:hover{
+        background-color: red;
+        color: #FFFFFF;
+    }
+    form{
+        margin-top: 96px;
+        padding: 40px 60px;
+        border-radius: 10px;
+        border: 2px solid #FF6347;
+        margin-left: 20%;
+        width: 60%;
+        height: 510px;
+    }
+    form.consulta{
+        margin-top: 48px;
+        width: 57px;
+        padding: 0px;
+        margin-left: 0;
+        border: 0;
+        height: 0;
+    }
+    form input{
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    #id_pesquisa_cf{
+        width: 300px;
+    }
+}
